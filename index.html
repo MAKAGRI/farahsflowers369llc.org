@@ -3,71 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VAR LAWN SERVICE L.L.C.</title>
+    <title>Farah's Flowers 369 LLC | Official Corporate Site</title>
     <style>
+        :root {
+            --primary-navy: #001f3f;
+            --accent-cyan: #00d4ff;
+            --light-bg: #f8f9fa;
+            --text-dark: #333;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            padding: 0;
-            background: #f8f8f8;
-            color: #333;
-        }
-        .header {
-            background: #2d6a4f;
-            color: #fff;
-            padding: 25px;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 30px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
             line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
         }
-        .contact {
-            margin-top: 30px;
-        }
-        footer {
+
+        header {
+            background: var(--primary-navy);
+            color: white;
+            padding: 2rem 10%;
             text-align: center;
-            padding: 15px;
-            background: #2d6a4f;
-            color: #fff;
-            margin-top: 40px;
+            border-bottom: 4px solid var(--accent-cyan);
         }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 2rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        .info-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: var(--primary-navy);
+            color: #ccc;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        h2 { color: var(--primary-navy); border-left: 5px solid var(--accent-cyan); padding-left: 10px; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>VAR LAWN SERVICE L.L.C.</h1>
-    </div>
+
+    <header>
+        <h1>FARAH'S FLOWERS 369 LLC</h1>
+        <p>Premium Retail & Digital Solutions</p>
+    </header>
 
     <div class="container">
-        <p>VAR LAWN SERVICE L.L.C. is a professional lawn care and maintenance company based in Florida, offering a full range of services to keep your outdoor spaces healthy and beautiful all year round. We are committed to excellence and customer satisfaction in every project we handle.</p>
+        <section class="hero">
+            <h2>Welcome to our Community</h2>
+            <p>At Farah's Flowers 369 LLC, we blend traditional retail excellence with modern digital innovation. Our commitment is to quality, reliability, and community engagement.</p>
+        </section>
 
-        <h2>Our Address</h2>
-        <p>2921 NW 26th Street<br>
-        Fort Lauderdale, FL 33311<br>
-        United States</p>
+        <section>
+            <h2>Our Portfolio</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80" alt="Floral Arrangement 1">
+                <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=500&q=80" alt="Retail Display">
+                <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=500&q=80" alt="Nature and Design">
+                <img src="https://images.unsplash.com/photo-1444930694458-01babf71870c?auto=format&fit=crop&w=500&q=80" alt="Workspace">
+                <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?auto=format&fit=crop&w=500&q=80" alt="Digital Innovation">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=500&q=80" alt="Customer Service">
+            </div>
+        </section>
 
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@varlawnservice.com">info@varlawnservice.com</a></p>
-        </div>
+        <section class="info-section">
+            <h2>Organization Details</h2>
+            <div class="contact-grid">
+                <div>
+                    <strong>Key Principal:</strong><br>
+                    Yalin Gonzalez
+                </div>
+                <div>
+                    <strong>Registered Address:</strong><br>
+                    809 NE 152ND Ave<br>
+                    Portland, OR, 97230-4720<br>
+                    United States
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>Contact Information</h2>
+            <p>For inquiries regarding our services or partnerships, please reach out via the following channels:</p>
+            <ul>
+                <li><strong>Email:</strong> contact@farahsflowers369llc.org</li>
+                <li><strong>Phone:</strong> +1 (878) 778-3445</li>
+                <li><strong>Operating Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM (PST)</li>
+            </ul>
+        </section>
     </div>
 
     <footer>
-        &copy; 2025 VAR LAWN SERVICE L.L.C. All rights reserved.
+        <p>&copy; 2026 Farah's Flowers 369 LLC. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
